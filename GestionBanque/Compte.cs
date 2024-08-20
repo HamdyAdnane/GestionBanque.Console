@@ -26,8 +26,6 @@ namespace GestionBanqueDbContext
         }
         public void UserCommand()
         {
-            var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-            IDbConnection dbConnection = new SqlConnection(configuration.GetSection("ConnectionString").Value);
             do
             {
                 int choix = ChoixMenu();
